@@ -25,7 +25,7 @@ namespace RDLCReportDemo
                 ReportParameter rp1 = new ReportParameter("Parameter1", "AAAAAAAAAAAAAAAAAAAAAAA\r\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\r\nAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaA");
                 ReportParameter rp2 = new ReportParameter("Parameter2", "BBB");
 
-                lr.ReportPath = @"C:\Users\chengcui.AVEPOINT\Documents\Visual Studio 2015\Projects\RDLCReportDemo\RDLCReportDemo\DemoReport.rdlc";
+                lr.ReportPath = @"..\..\DemoReport.rdlc";
 
                 lr.SetParameters(new[] { rp1, rp2 });
                 lr.DataSources.Add(new ReportDataSource("DataSet1", GetData()));
